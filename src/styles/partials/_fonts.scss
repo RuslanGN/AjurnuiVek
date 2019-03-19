@@ -1,0 +1,7 @@
+@import "../_mixins/font-face";
+
+@include font-face("EBGaramond", "../fonts/EBGaramond-Regular", 'normal');
+@include font-face("EBGaramond", "../fonts/EBGaramond-Bold", 'bold');
+@include font-face("EBGaramond", "../fonts/EBGaramond-Italic", 'normal', 'italic');
+
+

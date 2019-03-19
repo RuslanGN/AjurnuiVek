@@ -1,0 +1,70 @@
+doctype html
+html(lang="ru")
+  head
+    include blocks/head
+  body.body
+    .wrapper
+      include blocks/header
+      include blocks/home
+      main.main
+        .container
+          .main__container.main__container_aside
+            aside.aside.block
+              .aside__container
+                .aside-nav.aside-nav_style1
+                  .aside-nav__container
+                    .aside-nav__title.title Кованые изделия
+                    ul.aside-nav__list
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Ворота и калитка
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Двери и ков. элементы
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Заборы и ограждения
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Лестницы и перила
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Ограждения балконов
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Решетки на окна
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Кованые козырьки
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Мостики и перехходы
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Навесы из поликарбоната
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Кованая мебель
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Садовая мебель и утварь
+                .aside-nav.aside-nav_style2
+                  .aside-nav__container
+                    .aside-nav__title.title Металлоконструкции
+                    ul.aside-nav__list
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Ворота откатн./распашн.
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Заборы и ограждения
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Лестницы и ограждения
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Решетки на окна
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Козырьки и навесы
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Сборные фермы
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Сборные пролеты крыши
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Опоры и столбы
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Закладные эл-нты
+                      li.aside-nav__item
+                        a(href="#").aside-nav__link Заказ по чертежу
+            .main__content.block
+              include blocks/about
+          include blocks/gallery
+      include blocks/footer
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="js/libs.min.js")                  
+    script(src="js/common.min.js")

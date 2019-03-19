@@ -1,0 +1,125 @@
+.gallery {
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 107%;
+    height: 105%;
+    bottom: -15%;
+    left: -2%;
+  }
+  &:before {
+    background: url('../img/backgrounds/Gallery_bg-left.png') no-repeat bottom left;
+    background-size: auto 60%;
+  }
+  &:after {
+    background: url('../../img/backgrounds/Gallery_bg-right.png') no-repeat bottom right;
+    background-size: auto 60%;
+  }
+  &__content {
+    padding: 10px 60px 13px 60px;
+    position: relative;
+    z-index: 2;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: -11px;
+      height: 17px;
+      background: url('../img/backgrounds/Gallery_end-line_1200x16.png') no-repeat center center;
+      background-size: auto 100%;
+    }
+  }
+  &__button-prev,
+  &__button-next {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    border: 0;
+    outline: none;
+    transition: opacity 0.3s;
+    background-color: #fff;
+    cursor: pointer;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url('../img/backgrounds/arrow-slider.png') no-repeat center center;
+      background-size: 100% 100%;
+      position: absolute;
+    }
+    &:hover {
+      &:before {
+        opacity: 0.8;
+      }
+    }
+  }
+  &__button-prev {
+    left: 0;
+  }
+  .slick-list {
+    margin: 0 -6px;
+  }
+  &__button-next {
+    right: 0;
+    transform: rotate(180deg);
+  }
+  &__head {
+    background-color: #86755d;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    padding: 9px 0 9px 105px;
+    position: relative;
+    z-index: 3;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 75px;
+      height: 124px;
+      background: url('../img/backgrounds/lion.png') no-repeat center center;
+      background-size: contain;
+      left: 20px;
+      top: -20px;
+    }
+  }
+  &__title {
+    color: #fcd5a6;
+  }
+}
+.gallery-slider {
+  overflow: hidden;
+  &__slide {
+    padding: 0 6px;
+    img {
+      height: 278px;
+    }
+  }
+}
+
+@media all and(max-width: 576px) {
+  .gallery__head:before {
+    display: none;
+  }
+  .gallery__head {
+    padding-left: 0;
+  }
+  .gallery__title {
+    width: 100%;
+  }
+  .gallery__button-next, .gallery__button-prev {
+    display: none !important;
+  }
+  .gallery__content {
+    padding: 10px 0 13px 0;
+  }
+}

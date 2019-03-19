@@ -1,0 +1,119 @@
+.footer {
+  color: #fffbdb;
+  background: url('../img/backgrounds/Footer_bg.png') repeat center center;
+  &__nav {
+    background-color: #c5c6c6;
+  }
+  &__links-title {
+    padding-bottom: 0.3em;
+  }
+  &__text {
+    line-height: 1.2em;
+    display: block;
+  }
+  .container {
+    overflow: hidden;
+  }
+  &__container {
+    padding: 20px 0;
+    display: flex;
+    position: relative;
+  }
+  &__bg {
+    display: block;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 23px 3px rgba(15,10,0,0.8);
+  }
+  &__section {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    &:first-child {
+      padding-right: 110px;
+    }
+    &:last-child {
+      padding-left: 110px;
+      text-align: right;
+    }
+  }
+  &__counter {
+    width: 94px;
+    height: 32px;
+    background: url('../img/icons/Footer_ya-ico.png') no-repeat center center;
+    background-size: 100% 100%;
+  }
+  &__links {
+    padding: 25px 0 10px 0;
+  }
+  &__links-container {
+    display: flex;
+    align-items: center;
+  }
+}
+.footer-contacts {
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    color: #fffbdb;
+    text-decoration: none;
+  }
+  &__item-label {
+    font-weight: bold;
+    padding-right: 0.3em;
+  }
+  &__title {
+    font-weight: bold;
+  }
+}
+.copy {
+  font-size: 18px;
+  line-height: 1em;
+  display: block; 
+}
+
+@media all and(max-width: 992px) {
+  .footer__bg {
+    display: none;
+  }
+  .footer__section:first-child {
+    padding-right: 15px;
+  }
+  .footer__section:last-child {
+    padding-left: 15px;
+  }
+}
+
+@media all and(max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__section:last-child {
+    order: 1;
+  }
+  .footer__section:first-child {
+    order: 2;
+  }
+  .footer__section {
+    width: 100%;
+    text-align: center !important;
+    padding: 15px 0 !important;
+  }
+  .footer__links-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .socials__list {
+    margin-right: 0;
+  }
+  .footer__counter {
+    margin: 10px;
+  }
+}
